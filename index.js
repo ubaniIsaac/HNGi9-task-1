@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
         slackUsername: "i_ce_u",
         backend: true,
         age: 23,
-        bio: "A backend developer that enjoys building "
+        bio: "A backend developer that enjoys building cool things"
     })
 });
 
