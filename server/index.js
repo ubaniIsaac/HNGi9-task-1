@@ -13,7 +13,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 app.get('/', (req, res) => {
     res.json({
-        slackUsername: "i_ce_u",
+        slackUsername: "isaacchimdi",
         backend: true,
         age: 23,
         bio: "A backend developer that enjoys building cool things"
