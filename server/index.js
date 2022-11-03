@@ -22,18 +22,18 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
     const { operation_type, x, y } = req.body;
     switch (operation_type) {
-        case 'addition': result = x + y
+        case 'addition' || '+': result = x + y
             break;
-        case 'subtraction': result = x - y
+        case 'subtraction' || '-': result = x - y
             break;
-        case 'multiplication': result = x * y
+        case 'multiplication' || '*': result = x * y
             break;
         default: result = "Invalid Operation type"
     }
     res.send({
         slackUsername: "i-ce-u",
         operation_type: operation_type,
-        result: result
+        result: parseInt(result)
     })
 })
 
